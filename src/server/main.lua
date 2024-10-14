@@ -94,12 +94,8 @@ CreateThread(function()
     local name = "[^ictrophies^7]"
     local checkVersion = function(error, latestVersion, headers)
         local currentVersion = version
-        if currentVersion < latestVersion then
+        if currentVersion ~= latestVersion then
             print(name .. " ^1is outdated.\nCurrent version: ^8" .. currentVersion .. "\nNewest version: ^2" .. latestVersion .. "\n^3Update^7: https://github.com/IceClusters/ictrophies")
-        elseif currentVersion > latestVersion then
-            print(name .. " has skipped the latest version ^2" .. latestVersion .. " Either Github is offline or the version file has been changed")
-        else
-            print(name .. " is updated.")
         end
     end
     PerformHttpRequest("https://raw.githubusercontent.com/IceClusters/IceVersions/develop/ictrophies.version", checkVersion, "GET")
