@@ -3,12 +3,11 @@ let exploding = false;
 let isOpen = false;
 
 const trophiesImage = [
-    "https://i.imgur.com/eay4WBv.png",
-    "https://i.imgur.com/Wotxh7E.png",
-    "https://i.imgur.com/LZH4HMl.png",
-    "https://i.imgur.com/a0yuCxN.png"
+    "<https://i.ibb.co/ZVQR1fP/low.png>",
+    "<https://i.ibb.co/L0jRxbP/medium.png>",
+    "<https://i.ibb.co/qNyR69r/hard.png>",
+    "<https://i.ibb.co/5vWxv6D/master.png>"
 ]
-
 const defaults = {
     particleCount: 500,
     spread: 80,
